@@ -1,1 +1,10 @@
 # Oriented Object Programming (OOP)
+The PHP language allows programming using the following methodologies:
+1. **Linear Programming:** This is when we develop the entire code by interspersing PHP instructions with the HTML of the page.
+2. **Structured Programming:** This involves creating functions that group together tasks to be performed. These functions are then called within the page and can reside either in the same file or in a separate library.
+3. **Object-Oriented Programming (OOP):** This involves designing classes and defining objects based on these classes. (The goal of this tutorial is to learn the object-oriented programming methodology and the specific syntax of PHP 5 for OOP.)
+   
+## Basic Concepts
+An object is an independent entity with its own data and behavior. Windows, menus, and file folders can all be identified as objects; even a car engine is considered an object. In this case, its data (attributes) describe its physical characteristics, and its behavior (methods) defines its internal operations and interactions with other parts of the car (also objects).
+
+The groundbreaking concept in Object-Oriented Technology is the combination of functions and data elements, known as encapsulation. For instance, an object like a page contains physical dimensions (width, height), color, border style, etc., which are referred to as attributes. Encapsulated with these data elements are the methods for resizing the page, changing its color, displaying text, and more. The responsibility of a page object is to perform appropriate actions and keep its internal data up to date. When another part of the program (other objects) needs the page to carry out a task (e.g., changing its color), it sends a message to the page object. These message-sending objects do not need to know how the page object performs its tasks or the structure of its internal data; these details are hidden. Therefore, an object contains public information, which other objects need to interact with it, and private, internal information, which is necessary for the object to function but irrelevant to other objects in the application.
