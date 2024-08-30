@@ -9,7 +9,7 @@
     
 <?php
 
-class operation
+class operationv4
 {
     protected $value1;
     protected $value2;
@@ -27,7 +27,7 @@ class operation
     }
 }
 
-class addition extends operation
+class additionv4 extends operationv4
 {
     protected $value3;
 
@@ -44,7 +44,7 @@ class addition extends operation
     }
 }
 
-$object1 = new addition(3,4,3);
+$object1 = new additionv4(3,4,3);
 $object1->getAddition();
 $object1->showResult();
 
