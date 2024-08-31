@@ -10,7 +10,7 @@
 <?php
 /*In PHP, unlike other object-oriented languages ​​(C++), a class can only be derived from a single class,
 that is, PHP does not allow multiple inheritance.*/
-class operation
+class operationv1
 {
     protected $value1;
     protected $value2;
@@ -34,7 +34,7 @@ class operation
 }
 
 # If we see that two classes answer the question ClassA "..is a.." ClassB it is possible that there is an inheritance relationship.
-class addition extends operation
+class additionv1 extends operationv1
 {
     public function operation()
     {
@@ -42,7 +42,7 @@ class addition extends operation
     }
 }
 
-class substraction extends operation
+class substraction extends operationv1
 {
     public function operation()
     {
@@ -50,7 +50,7 @@ class substraction extends operation
     }
 }
 
-$object1 = new addition();
+$object1 = new additionv1();
 $object1->inputValue1(3);
 $object1->inputValue2(3);
 $object1->operation();

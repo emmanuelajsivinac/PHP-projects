@@ -9,7 +9,11 @@
 
 <?php
 
-class operation
+/* When overriding methods, we must preserve the method name, parameter count, parameter types, 
+and return type as defined in the parent class.
+*/
+
+class operationv2
 {
     protected $value1;
     protected $value2;
@@ -32,17 +36,21 @@ class operation
 
 }
 
-class addition extends operation
+class additionv2 extends operationv2
 {
     public function operation()
     {
         $this->result = $this->value1 + $this->value2;
     }
+
+    public function showResult ()
+    {
+        echo '<p>The result is: '.$this->result.'</p>';
+    }
 }
 
-$object1 = new addition();
+$object1 = new additionv2();
 $object1->inputValue1(5);
-#$object1->value2=10;
 $object1->inputValue2(15);
 $object1->operation();
 $object1->showResult();

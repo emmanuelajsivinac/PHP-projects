@@ -9,13 +9,12 @@
 
 <?php
 
-/* We can overwrite methods using the parent:: keyword. However, when we use this keyword, 
-we cannot edit the parent method; we can only use it to add extra code or call it without adding anything else. 
-Remember, we have to respect the name, the number and type of parameters, 
-and the return type from the parent class.  
+/* We can override methods using the parent:: keyword. When doing so, we cannot modify the parent method itself; 
+we can only extend its functionality or call it as is. It's important to maintain the same method name, 
+parameter count, parameter types, and return type as the parent class. 
 */
 
-class operation
+class operationv3
 {
     protected $value1;
     protected $value2;
@@ -38,7 +37,7 @@ class operation
 
 }
 
-class addition extends operation
+class additionv3 extends operationv3
 {
     public function operation()
     {
@@ -53,7 +52,7 @@ class addition extends operation
     }
 }
 
-$object1 = new addition();
+$object1 = new additionv3();
 $object1->inputValue1(5);
 $object1->inputValue2(15);
 $object1->operation();

@@ -33,7 +33,8 @@ class additionv4 extends operationv4
 
     public function __construct($value1,$value2,$value3)
     {
-        # To Overwrite the Constructor Function we new use the parent:: keyword.        
+        /* To override the constructor function, we use the parent:: keyword 
+        to call the parent class's constructor. */   
         parent::__construct($value1,$value2);
         $this->value3 = $value3;
     }
