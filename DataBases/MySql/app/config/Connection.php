@@ -1,6 +1,5 @@
 <?php
-require_once __DIR__ . '/../../vendor/autoload.php'; // Ajusta la ruta a autoload.php en vendor
-
+require_once __DIR__ . '/../../vendor/autoload.php'; 
 use Dotenv\Dotenv;
 
 class connectionMySql {
