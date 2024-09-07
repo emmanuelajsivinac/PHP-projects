@@ -1,0 +1,17 @@
+{
+    "name": "emmanuel-ajsivinac/my-sql",
+    "require": {
+        "vlucas/phpdotenv": "^5.6"
+    },
+    "autoload": {
+        "psr-4": {
+            "EmmanuelAjsivinac\\MySql\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "emmanuelajsivinac",
+            "email": "emmajsivinac@gmail.com"
+        }
+    ]
+}
