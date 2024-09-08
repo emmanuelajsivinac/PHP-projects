@@ -3,11 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/public/css/NavigationSection.css">
     <title>Menu</title>
 </head>
 <body>
-<h1>Query Results</h1>
-
+<div class = 'mainContainer'>
+<h1>List of students</h1>
 <table>
     <thead>
         <tr>
@@ -26,5 +27,6 @@
         <?php endforeach; ?>
     </tbody>
 </table>
+</div>
 </body>
 </html>

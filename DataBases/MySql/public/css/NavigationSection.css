@@ -1,0 +1,73 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "SUSE", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400; /* Puedes ajustar el peso aquí */
+    font-style: normal;
+    line-height: 1.6;
+    color: #f4f4f4;
+    background-color: #1a1a1a;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.mainContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    height: 100vh;   
+}
+
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #f4f4f4;
+    font-size: 2rem;
+}
+
+table {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    border-collapse: collapse;
+    background-color: #333;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+thead {
+    background-color: #444;
+    color: #f4f4f4;
+}
+
+th, td {
+    padding: 12px 15px;
+    text-align: left;
+}
+
+th {
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+}
+
+tr:nth-child(even) {
+    background-color: #2b2b2b;
+}
+
+tr:hover {
+    background-color: #555;
+}
+
+td {
+    border-bottom: 1px solid #444;
+}
